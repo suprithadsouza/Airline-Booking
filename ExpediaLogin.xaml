@@ -1,0 +1,410 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExpediaLogin" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,5531.2" sap2010:WorkflowViewState.IdRef="ExpediaLogin_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExpediaLogin" sap:VirtualizedContainerService.HintSize="809.6,5466.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ss:SecureString" Name="ExpediaPwd" />
+      <Variable x:TypeArguments="x:String" Name="ExpediaUN" />
+      <Variable x:TypeArguments="x:String" Name="Password" />
+      <Variable x:TypeArguments="x:String" Name="WindowTitle" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="747.2,5354.4" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:05:00">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="705.6,5178.4" sap2010:WorkflowViewState.IdRef="Sequence_29">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="643.2,5066.4" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Expedia Account Login" sap:VirtualizedContainerService.HintSize="606.4,4812" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="a407fda2-4c49-42ca-aa93-8343733a082d" Version="V2" WindowResize="Maximize">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572.8,4595.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:Boolean" Name="EnterPwdInsteadExists" />
+                          <Variable x:TypeArguments="x:Boolean" Name="ExpediaIMG" />
+                          <Variable x:TypeArguments="x:Boolean" Name="ForgotPassword" />
+                          <Variable x:TypeArguments="x:Boolean" Name="StaysTabExists" />
+                          <Variable x:TypeArguments="x:Boolean" Name="AddAPlaceToStayExists" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="ExpediaCred" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="510.4,143.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_3" Password="[ExpediaPwd]" Username="[ExpediaUN]" />
+                        <uix:NSetText DisplayName="Set Text 'INPUT loginFormEmailInp…'" sap:VirtualizedContainerService.HintSize="510.4,163.2" sap2010:WorkflowViewState.IdRef="NSetText_5" ScopeIdentifier="a407fda2-4c49-42ca-aa93-8343733a082d" Text="[ExpediaUN]" Version="V3">
+                          <uix:NSetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.expedia.com/login?&amp;uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1" CvElementArea="758, 429, 403, 51" CvType="InputBox" DesignTimeRectangle="760, 431, 400, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT loginFormEmailInp…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Email' type='email' class='uitk-field-input replay-reveal empty-placeholder' /&gt;" Guid="17c16758-fb8d-477f-abd4-5076cc8ca89f" InformativeScreenshot="7a652508891491ff8cf0e38b239958eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Account Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NSetText.Target>
+                        </uix:NSetText>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a407fda2-4c49-42ca-aa93-8343733a082d" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.expedia.com/login?&amp;uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1" CvElementArea="758, 545, 405, 52" CvTextArea="924, 563, 71, 15" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="760, 547, 400, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl aaname='Continue' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Continue' tag='BUTTON' type='submit' class='uitk-button uitk-button-large uitk-button-has-text uitk-button-primary' check:text='Continue' /&gt;" Guid="9ccce896-1e40-408b-bedd-7bf63fded558" InformativeScreenshot="7cfe974f9cd57e02fab3f71517e28f97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Account Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:UiElementExists DisplayName="Element Exists 'BUTTON  passwordButton'" Exists="[EnterPwdInsteadExists]" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_13">
+                          <ui:UiElementExists.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="474e0b01-d23a-4040-a448-0a9745d29cec" InformativeScreenshot="1c5c94c8176002f361ca281fd8aa51f8" Selector="&lt;webctrl id='passwordButton' tag='BUTTON' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:UiElementExists.Target>
+                        </ui:UiElementExists>
+                        <If Condition="[EnterPwdInsteadExists]" sap:VirtualizedContainerService.HintSize="510.4,567.2" sap2010:WorkflowViewState.IdRef="If_9">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476.8,301.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[WindowTitle]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">Expedia Account Login</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Throw Exception="[New FindElementException(&quot;Failed to Navigate to the Let's Confirm It is You Page.&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Throw_12" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                        <Assign sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[Password]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[new System.Net.NetworkCredential(string.Empty, ExpediaPwd).Password]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enter password instead'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a407fda2-4c49-42ca-aa93-8343733a082d" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.expedia.com/verifyotp?ckoflag=0&amp;uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1&amp;scenario=SIGNIN&amp;path=email" CvTextArea="875, 619, 169, 15" CvTextArgument="Enter password instead" CvType="Text" DesignTimeRectangle="752, 603, 416, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Enter password instead'" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Enter password instead' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Enter password instead' type='button' class='uitk-button uitk-button-large uitk-button-has-text uitk-button-tertiary uitk-layout-flex-item replay-reveal' check:text='Enter password instead' /&gt;" Guid="6f4bb42e-7ed4-46fe-be32-6410c1e18814" InformativeScreenshot="89b6b01887d139baff2e616054e1cf9c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Account Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:UiElementExists DisplayName="Element Exists 'A  enterPasswordFormFor...'" Exists="[ForgotPassword]" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_14">
+                          <ui:UiElementExists.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="892d9603-2192-4576-9c2a-9fcc8d7af57a" InformativeScreenshot="85c2d25a17680307ceaf104b592e7b3d" Selector="&lt;webctrl id='enterPasswordFormForgoPwdLink' tag='A' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:UiElementExists.Target>
+                        </ui:UiElementExists>
+                        <If Condition="[ForgotPassword]" sap:VirtualizedContainerService.HintSize="510.4,567.2" sap2010:WorkflowViewState.IdRef="If_10">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476.8,301.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[WindowTitle]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">Expedia Account Login</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Throw Exception="[new FindElementException(&quot;ForgotPasswordNot found&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Throw_13" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                        <uix:NSetText DisplayName="Set Text 'INPUT enterPasswordForm…'" sap:VirtualizedContainerService.HintSize="510.4,163.2" sap2010:WorkflowViewState.IdRef="NSetText_6" ScopeIdentifier="a407fda2-4c49-42ca-aa93-8343733a082d" Text="[Password]" Version="V3">
+                          <uix:NSetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.expedia.com/enterpassword?ckoflag=0&amp;uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1&amp;scenario=SIGNIN&amp;path=email" CvTextArea="771, 341, 67, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="760, 325, 400, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT enterPasswordForm…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Password' type='password' class='uitk-field-input uitk-password-visibility-input has-input-cta empty-placeholder' /&gt;" Guid="332217a3-c07d-4f20-b390-48af541181c3" InformativeScreenshot="edb82cc184aa4f486cd2e4061a650ecc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Account Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NSetText.Target>
+                        </uix:NSetText>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a407fda2-4c49-42ca-aa93-8343733a082d" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.expedia.com/enterpassword?ckoflag=0&amp;uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1&amp;scenario=SIGNIN&amp;path=email" CvElementArea="758, 511, 405, 52" CvTextArea="932, 528, 53, 20" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="760, 513, 400, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='Sign in' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='Sign in' type='submit' class='uitk-button uitk-button-large uitk-button-has-text uitk-button-primary uitk-spacing replay-reveal uitk-spacing-margin-blockstart-two uitk-layout-flex-item' check:text='Sign in' /&gt;" Guid="a7878aca-ce09-4a59-99cf-d5f0a689aad7" InformativeScreenshot="8ca3c622fe7b457bd37e4c483a2b3ef1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Account Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[StaysTabExists]" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_15">
+                          <ui:UiElementExists.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5c4a18b-e812-4928-b763-35c04ff4e5f7" InformativeScreenshot="476eff8ed2542b3bc21969a8951eea2d" Selector="&lt;webctrl parentid='multi-product-search-form-1' tag='SPAN' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:UiElementExists.Target>
+                        </ui:UiElementExists>
+                        <If Condition="[StaysTabExists]" sap:VirtualizedContainerService.HintSize="510.4,567.2" sap2010:WorkflowViewState.IdRef="If_11">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476.8,301.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[WindowTitle]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">Expedia Account Login</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Throw Exception="[new FindElementException(&quot;Failed to login&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Throw_14" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Flights'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a407fda2-4c49-42ca-aa93-8343733a082d" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.expedia.com/?logout=1" CvTextArea="758, 357, 56, 20" CvTextArgument="Flights" CvType="Text" DesignTimeRectangle="759, 356, 53, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Flights'" FullSelectorArgument="&lt;webctrl aaname='Flights' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Flights' tag='SPAN' type='' class='uitk-tab-text' check:text='Flights' /&gt;" Guid="b3a6fd3d-d0dc-4881-9e20-1c413f5addfb" InformativeScreenshot="c62eded79cfc815edde37ec0726f540a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Travel: Vacation Homes, Hotels, Car Rentals, Flights &amp;amp; More' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[AddAPlaceToStayExists]" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_17">
+                          <ui:UiElementExists.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1b52afd1-a531-4214-b5ef-01e68139a0c3" InformativeScreenshot="71cb7fb5b3cd6dbc5434019cfd66755c" Selector="&lt;html app='chrome.exe' title='Expedia Travel: Vacation Homes, Hotels, Car Rentals, Flights &amp;amp; More' /&gt;&lt;webctrl aaname='Add a place to stay' idx='2' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:UiElementExists.Target>
+                        </ui:UiElementExists>
+                        <If Condition="[AddAPlaceToStayExists]" sap:VirtualizedContainerService.HintSize="510.4,567.2" sap2010:WorkflowViewState.IdRef="If_12">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476.8,301.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[WindowTitle]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">Expedia Travel: Vacation Homes, Hotels, Car Rentals, Flights &amp; More</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Throw Exception="[new FindElementException(&quot;Failed to Navgate to Flights Booking Search screen.&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Throw_15" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGsSURBVDhPpZPNLgNRHMU9QSMhGl87tIhK7kyqM7NBqI+FsGms2HkBL1BrXoEHsPWVSBASy6JE4nvBgoikFUKQzvE/V6etpJ1ILE5m7v3f85tz7/1PVe5SBURzokcR/iiupSdAAF/eRbqIa3+5VwUIPUkCHjjhij7PFc63DBytm0iXEedv9w0PQN0T4HLweaawOB9FV8RGS8hBa7iotnYb4Q5bP0fiFu4Egp8kOQJ0tNSKicSEhaEBC8ODRY0OWYh02wg2Owg2OQgJ5HjD1B5+XAOot1OF7JGB57Qq6PVEYW/ZhG3ZqGsUgEDCnRUAFA/IE24UDtdM9PdaqG1wNKRLkoRkKxUBnlg8WDXRJ+aaekdDdiUJ988z8QXw66VmPpnkRbbDM/EF0PwhtzE9GUN13Y+ZMG4nK2fiC/iSHsgcGnhKGUjO9miINstCgn0BHFzuGBgbtTAzFdMQJqGRdQ8QlyvmlV5sSx+UAFwOTjdNKMPWECbxzB4gI1ecGLewtBDVafM13Ui6ldkHhDBJyYKCWGez6WTFed3KhZ+JSfLRysr9XaNnjoB//M4q8A3mjqnICHwMtAAAAABJRU5ErkJggg==" InformativeScreenshot="9dc63f2d59c014bfbfb25adcf7925d54.jpg" Selector="&lt;html app='chrome.exe' title='Expedia Account Login' /&gt;" Title="Expedia Account Login" Url="https://www.expedia.com/login?&amp;uurl=e3id%3Dredr%26rurl%3D%2F%3Flogout%3D1" />
+                  </uix:NApplicationCard.TargetApp>
+                </uix:NApplicationCard>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="ui:FindElementException" sap:VirtualizedContainerService.HintSize="609.6,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="ui:FindElementException">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:FindElementException" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence sap:VirtualizedContainerService.HintSize="449.6,284" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Rethrow sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="Rethrow_8" />
+                      <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'chrome.exe Expedia'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_4" InformativeScreenshot="6238db51a4d6d14f34ea33944f6195bb" Selector="[&quot;&lt;html app='chrome.exe' title='&quot;+WindowTitle+&quot;' /&gt;&quot;]" WaitForReady="INTERACTIVE" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="609.6,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Throw Exception="[new SystemException(&quot;Unexpected System failure Occured&quot;)]" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Throw_11" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+    </ui:RetryScope>
+  </Sequence>
+</Activity>
